@@ -2,18 +2,18 @@
 import './App.css';
 
 function App() {
-  // const [post, setPost] = useState(null);
+  // const [todo, setTodo] = useState(null);
 
   // useEffect(() => {
   //   async function loadData() {
-  //     const retrievedData = await getPost(1);
-  //     setPost(retrievedData);
+  //     const retrievedData = await getTodo(1);
+  //     setTodos(retrievedData);
   //   }
 
   //   loadData();
   // }, []);
 
-  // console.log(post);
+  // console.log(todo);
 
   return (
     <></>

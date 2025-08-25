@@ -1,13 +1,27 @@
 const BASE_URL = `${import.meta.env.VITE_API_URL}/todos`;
 
-export function getAllTodos() {
-    fetch(BASE_URL)
-        .then(response => response.json())
-        .then(json => console.log(json));
+export async function getAllTodos() {
+    try {
+        const response = await fetch(BASE_URL);
+        if (!response.ok) {
+            throw new Error(`Response status: ${response.status}`);
+        }
+
+        return response.json();
+    } catch (error) {
+        console.error(`Error fetching all todos: ${error.message}`);
+    }
 }
 
-export function getTodo(todoId) {
-    fetch(`${BASE_URL}/${todoId}`)
-        .then(response => response.json())
-        .then(json => console.log(json));
+export async function getTodo(todoId) {
+    try {
+        const response = await fetch(`${BASE_URL}/${todoId}`);
+        if (!response.ok) {
+            throw new Error(`Response status: ${response.status}`);
+        }
+
+        return response.json();
+    } catch (error) {
+        console.error(`Error fetching todo with ID ${todoId}: ${error.message}`);
+    }
 }
