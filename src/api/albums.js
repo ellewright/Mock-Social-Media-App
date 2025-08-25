@@ -11,7 +11,6 @@ export async function getAllAlbums() {
     } catch (error) {
         console.error(`Error fetching all albums: ${error.message}`);
     }
-
 }
 
 export async function getAlbum(albumId) {

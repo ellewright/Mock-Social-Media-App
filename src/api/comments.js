@@ -1,13 +1,27 @@
 const BASE_URL = `${import.meta.env.VITE_API_URL}/comments`;
 
-export function getAllComments() {
-    fetch(BASE_URL)
-        .then(response => response.json())
-        .then(json => console.log(json));
+export async function getAllComments() {
+    try {
+        const response = await fetch(BASE_URL);
+        if (!response.ok) {
+            throw new Error(`Response status: ${response.status}`);
+        }
+
+        return response.json();
+    } catch (error) {
+        console.error(`Error fetching all comments: ${error.message}`);
+    }
 }
 
-export function getComment(commentId) {
-    fetch(`${BASE_URL}/${commentId}`)
-        .then(response => response.json())
-        .then(json => console.log(json));
+export async function getComment(commentId) {
+    try {
+        const response = await fetch(`${BASE_URL}/${commentId}`);
+        if (!response.ok) {
+            throw new Error(`Response status: ${response.status}`);
+        }
+
+        return response.json();
+    } catch (error) {
+        console.error(`Error fetching comment with ID ${commentId}: ${error.message}`);
+    }
 }

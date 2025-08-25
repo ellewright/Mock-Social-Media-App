@@ -1,19 +1,20 @@
 // import { useEffect, useState } from 'react';
 import './App.css';
+// import { getAllComments, getComment } from './api/comments';
 
 function App() {
-  // const [albums, setAlbums] = useState([]);
+  // const [comment, setComment] = useState(null);
 
   // useEffect(() => {
   //   async function loadData() {
-  //     const retrievedData = await getAllAlbums();
-  //     setAlbums(retrievedData);
+  //     const retrievedData = await getComment(1);
+  //     setComment(retrievedData);
   //   }
 
   //   loadData();
   // }, []);
 
-  // console.log(albums);
+  // console.log(comment);
 
   return (
     <></>
