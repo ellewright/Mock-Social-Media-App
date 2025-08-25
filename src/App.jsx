@@ -2,18 +2,18 @@
 import './App.css';
 
 function App() {
-  // const [photos, setPhotos] = useState([]);
+  // const [post, setPost] = useState(null);
 
   // useEffect(() => {
   //   async function loadData() {
-  //     const retrievedData = await getAllPhotos();
-  //     setPhotos(retrievedData);
+  //     const retrievedData = await getPost(1);
+  //     setPost(retrievedData);
   //   }
 
   //   loadData();
   // }, []);
 
-  // console.log(photos);
+  // console.log(post);
 
   return (
     <></>
