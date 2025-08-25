@@ -1,13 +1,27 @@
 const BASE_URL = `${import.meta.env.VITE_API_URL}/photos`;
 
-export function getAllPhotos() {
-    fetch(BASE_URL)
-        .then(response => response.json())
-        .then(json => console.log(json));
+export async function getAllPhotos() {
+    try {
+        const response = await fetch(BASE_URL);
+        if (!response.ok) {
+            throw new Error(`Response status: ${response.status}`);
+        }
+
+        return response.json();
+    } catch (error) {
+        console.error(`Error fetching all photos: ${error.message}`);
+    }
 }
 
-export function getPhoto(photoId) {
-    fetch(`${BASE_URL}/${photoId}`)
-        .then(response => response.json())
-        .then(json => console.log(json));
+export async function getPhoto(photoId) {
+    try {
+        const response = await fetch(`${BASE_URL}/${photoId}`);
+        if (!response.ok) {
+            throw new Error(`Response status: ${response.status}`);
+        }
+
+        return response.json();
+    } catch (error) {
+        console.error(`Error fetching photo with ID ${photoId}: ${error.message}`);
+    }
 }
