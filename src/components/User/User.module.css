@@ -1,1 +1,11 @@
-.userContainer {}
+.userContainer {
+    border: 1px solid red;
+}
+
+.userSocialsContainer {
+    border: 1px solid red;
+}
+
+.userAddressContainer {
+    border: 1px solid red;
+}

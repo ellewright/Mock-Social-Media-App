@@ -31,17 +31,22 @@ export default function User({ userId }) {
 
     return user.id !== null && (
         <div className={styles.userContainer}>
-            <h1>{user.name}</h1>
-            <p>{user.username}</p>
-            <p>{user.email}</p>
-            <div>
-                <p>{user.address.street}</p>
-                <p>{user.address.suite}</p>
-                <p>{user.address.city}</p>
-                <p>{user.address.zipcode}</p>
+            <div className={styles.userSocialsContainer}>
+                <h1>{user.name}</h1>
+                <p>{user.username}</p>
+                <p>{user.email}</p>
+            </div>
+            <div className={styles.userAddressContainer}>
+                <p>
+                    {user.address.street} {user.address.suite}
+                </p>
+                <p>
+                    {user.address.city} {user.address.zipcode}
+                </p>
                 <div>
-                    <p>{user.address.geo.lat}</p>
-                    <p>{user.address.geo.lng}</p>
+                    <p>
+                        {user.address.geo.lat} {user.address.geo.lng}
+                    </p>
                 </div>
             </div>
         </div>
