@@ -1,3 +1,27 @@
+:root {
+    --primary-darker: hsl(228, 37%, 50%);
+    --primary: hsl(228, 37%, 60%);
+    --primary-lighter: hsl(228, 37%, 70%);
+
+    --secondary-darker: hsl(346, 91%, 55%);
+    --secondary: hsl(346, 91%, 65%);
+    --secondary-lighter: hsl(346, 91%, 75%);
+
+    --tertiary-darker: hsl(128, 52%, 30%);
+    --tertiary: hsl(128, 52%, 40%);
+    --tertiary-lighter: hsl(128, 52%, 50%);
+
+    --dark-theme-darker: hsl(238, 35%, 10%);
+    --dark-theme: hsl(238, 35%, 20%);
+    --dark-theme-lighter: hsl(238, 35%, 30%);
+    --dark-theme-text: hsl(0, 0%, 90%);
+
+    --light-theme-darker: hsl(0, 0%, 60%);
+    --light-theme: hsl(0, 0%, 70%);
+    --light-theme-lighter: hsl(0, 0%, 80%);
+    --light-theme-text: hsl(238, 35%, 20%);
+}
+
 * {
     margin: 0;
     padding: 0;
