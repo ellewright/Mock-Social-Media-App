@@ -19,7 +19,7 @@ export default function Post({ postId }) {
         loadPost();
     }, [postId]);
 
-    return (
+    return post.id !== null && (
         <div className={styles.postContainer}>
             <h1>{post.title}</h1>
             <p>{post.body}</p>
