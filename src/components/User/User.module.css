@@ -1,5 +1,13 @@
-.userContainer {}
+.userContainer {
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+}
 
-.userSocialsContainer {}
+.userName {
+    margin-bottom: 1rem;
+}
 
-.userAddressContainer {}
+.userSocialsContainer {
+    margin-bottom: 1rem;
+}

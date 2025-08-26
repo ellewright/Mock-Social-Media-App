@@ -31,12 +31,19 @@ export default function User({ userId }) {
 
     return user.id !== null && (
         <div className={styles.userContainer}>
+            <h1 className={styles.userName}>{user.name}</h1>
             <div className={styles.userSocialsContainer}>
-                <h1>{user.name}</h1>
-                <p>{user.username}</p>
-                <p>{user.email}</p>
+                <p>
+                    Username: <a href="/">@{user.username.toLowerCase()}</a>
+                </p>
+                <p>
+                    Email: {user.email.toLowerCase()}
+                </p>
             </div>
             <div className={styles.userAddressContainer}>
+                <p>
+                    Address:
+                </p>
                 <p>
                     {user.address.street} {user.address.suite}
                 </p>
