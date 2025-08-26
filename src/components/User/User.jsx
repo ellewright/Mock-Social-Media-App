@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import { getUser } from "../../api/users";
+import styles from "./User.module.css";
 
 export default function User({ userId }) {
     const [user, setUser] = useState({
@@ -29,7 +30,7 @@ export default function User({ userId }) {
     }, [userId]);
 
     return user.id !== null && (
-        <div>
+        <div className={styles.userContainer}>
             <h1>{user.name}</h1>
             <p>{user.username}</p>
             <p>{user.email}</p>
