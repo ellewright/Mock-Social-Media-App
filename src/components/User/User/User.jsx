@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { getUser } from "../../api/users";
+import { getUser } from "../../../api/users";
 import styles from "./User.module.css";
 
 export default function User({ userId }) {
