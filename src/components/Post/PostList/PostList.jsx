@@ -5,7 +5,7 @@ export default function PostList({ posts }) {
     return (
         <div className={styles.postListContainer}>
             {posts.map((post) => (
-                <Post key={post.id} userId={post.id} />
+                <Post key={post.id} postId={post.id} />
             ))}
         </div>
     );
