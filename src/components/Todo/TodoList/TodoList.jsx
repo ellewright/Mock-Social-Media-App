@@ -5,7 +5,7 @@ export default function TodoList({ todos }) {
     return (
         <div className={styles.todoListContainer}>
             {todos.map((todo) => (
-                <Todo key={todo.id} userId={todo.id} />
+                <Todo key={todo.id} todoId={todo.id} />
             ))}
         </div>
     );
