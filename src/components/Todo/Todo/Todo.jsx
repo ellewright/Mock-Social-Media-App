@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { getTodo } from "../../api/todos";
+import { getTodo } from "../../../api/todos";
 import styles from "./Todo.module.css";
 
 export default function Todo({ todoId }) {
