@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { getComment } from "../../api/comments";
+import { getComment } from "../../../api/comments";
 import styles from "./Comment.module.css";
 
 export default function Comment({ commentId }) {
