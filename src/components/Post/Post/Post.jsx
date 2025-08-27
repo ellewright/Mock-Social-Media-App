@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
+import { getPost } from "../../../api/posts";
 import styles from "./Post.module.css";
-import { getPost } from "../../api/posts";
 
 export default function Post({ postId }) {
     const [post, setPost] = useState({
