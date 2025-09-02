@@ -1,4 +1,6 @@
-:root {}
+:root {
+    --primary: hsl(263, 45%, 56%);
+}
 
 * {
     margin: 0;
